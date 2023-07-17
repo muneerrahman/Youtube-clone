@@ -1,0 +1,12 @@
+{% extends "parent.html" %}
+{% block title %}
+LOGIN VIEW <br>
+{% endblock %}
+
+{% block body %}
+<form action="login" method="POST">
+    {% csrf_token %}
+    {{form}} <br>
+    <button type="submit" class="btn btn-success">login</button>
+</form>
+{% endblock %}

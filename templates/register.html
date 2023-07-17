@@ -1,0 +1,12 @@
+{% extends "parent.html" %}
+{% block title %}
+REGISTER VIEW <br>
+{% endblock %}
+
+{% block body %}
+<form action="register" method="POST">
+    {% csrf_token %}
+    {{form}} <br>
+    <button type="submit" class="btn btn-primary">register</button>
+</form>
+{% endblock %}
